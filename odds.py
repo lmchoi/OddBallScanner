@@ -9,4 +9,4 @@ class Odds:
         self.decimal_odds = Fraction(odds).__round__(3) + 1
 
     def __repr__(self):
-        return self.team + " at " + self.odds
+        return self.team + " at " + str(self.decimal_odds)

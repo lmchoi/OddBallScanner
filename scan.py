@@ -1,9 +1,15 @@
 from request import Request
 from williamhill import WilliamHillService
+from smarkets import SmarketsService
 
 req = Request()
 williamHillService = WilliamHillService()
-odds = williamHillService.getOdds(req)
-print(odds)
+smarketsService = SmarketsService()
+
+williamHillOdds = williamHillService.getOdds(req)
+print(williamHillOdds)
+
+contracts = smarketsService.getContracts(req)
+print(contracts)
 
 
