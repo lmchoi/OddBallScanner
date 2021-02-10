@@ -13,6 +13,7 @@ class TestOdds(unittest.TestCase):
         self.assertEqual(Odds('A', '4/9').decimal_odds, Fraction('13/9'))
 
     def test_repr(self):
-        self.assertEquals(Odds('A', '1/3').__repr__(), "A at 1.33")
+        self.assertEqual(Odds('A', '1/3').__repr__(), "A at 1/3 (1.33)")
+
 if __name__ == '__main__':
     unittest.main()
